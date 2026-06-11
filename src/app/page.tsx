@@ -2,13 +2,42 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="max-w-5xl mx-auto px-6 py-20">
-      <h1 className="text-5xl font-serif mb-12">Latest Articles</h1>
-      <div className="grid md:grid-cols-2 gap-8">
-        <Link href="/posts/gut-health" className="group block border border-gray-100 p-8 hover:border-gray-300 transition-all">
-          <h2 className="text-2xl font-medium mb-2 group-hover:text-blue-600">The 7-Day Gut Health Protocol</h2>
-          <p className="text-gray-500">Why most probiotics fail—and what actually works.</p>
+    <main className="max-w-6xl mx-auto px-6 md:px-12 py-20">
+      {/* 封面区 (Hero Section) */}
+      <section className="text-center py-24 border-b border-gray-100 mb-20">
+        <span className="text-sm font-semibold tracking-[0.2em] uppercase text-gray-400 mb-4 block">Journal</span>
+        <h1 className="text-5xl md:text-7xl font-serif font-medium tracking-tighter mb-8 leading-tight">
+          Redefining <br/>Modern Wellness
+        </h1>
+        <p className="text-gray-500 text-lg max-w-xl mx-auto font-light">
+          A curated perspective on health, longevity, and intentional living. 
+          Science-backed insights for the modern lifestyle.
+        </p>
+      </section>
+
+      {/* 文章网格区 (Editorial Grid) */}
+      <div className="grid md:grid-cols-2 gap-16">
+        
+        {/* 文章卡片 1 */}
+        <Link href="/posts/gut-health" className="group block">
+          <div className="aspect-[4/3] bg-gray-50 mb-6 overflow-hidden">
+            <div className="w-full h-full bg-gray-100 group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <span className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-2 block">Nutrition</span>
+          <h2 className="text-3xl font-serif font-medium mb-3 group-hover:text-gray-600 transition-colors">
+            The 7-Day Gut Health Protocol
+          </h2>
+          <p className="text-gray-500 leading-relaxed">
+            Why most probiotics fail—and what actually works for your microbiome.
+          </p>
         </Link>
+
+        {/* 文章卡片 2 (你可以之后添加更多) */}
+        <div className="flex flex-col justify-center border-t md:border-t-0 border-gray-100 pt-10 md:pt-0">
+          <div className="text-gray-300 font-serif italic text-xl mb-4">Coming Soon...</div>
+          <h3 className="text-xl font-medium text-gray-400">Sleep Optimization Guide</h3>
+        </div>
+
       </div>
     </main>
   );
