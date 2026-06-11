@@ -1,48 +1,42 @@
-import Link from "next/link";
-
 export default function Home() {
   return (
-    <main className="max-w-6xl mx-auto px-6 md:px-12 py-20">
+    <main>
       {/* 封面区 (Hero Section) */}
-      <section className="text-center py-24 border-b border-gray-100 mb-20">
-        <span className="text-sm font-semibold tracking-[0.2em] uppercase text-gray-400 mb-4 block">Journal</span>
-        <h1 className="text-5xl md:text-7xl font-serif font-medium tracking-tighter mb-8 leading-tight">
-          Redefining <br/>Modern Wellness
-        </h1>
-        <p className="text-gray-500 text-lg max-w-xl mx-auto font-light">
-          A curated perspective on health, longevity, and intentional living. 
-          Science-backed insights for the modern lifestyle.
-        </p>
+      <section className="relative h-[80vh] flex items-center justify-center text-white">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0a?auto=format&fit=crop&q=80&w=2000" 
+            alt="Wellness Hero" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/40"></div> {/* 遮罩层，让字更清晰 */}
+        </div>
+        
+        <div className="relative z-10 text-center px-6">
+          <h1 className="text-5xl md:text-7xl font-serif font-medium mb-6">Redefining Modern Wellness</h1>
+          <p className="text-lg md:text-xl font-light mb-8 max-w-2xl mx-auto">
+            Curated, science-backed insights for longevity, performance, and intentional living.
+          </p>
+          <a href="/posts/gut-health" className="inline-block bg-white text-black px-8 py-4 font-bold uppercase tracking-widest text-sm hover:bg-gray-200 transition-all">
+            Read Our Latest
+          </a>
+        </div>
       </section>
 
-      {/* 文章网格区 (Editorial Grid) */}
-      <div className="grid md:grid-cols-2 gap-16">
-        
-        {/* 文章卡片 1 - 带有封面图 */}
-        <Link href="/posts/gut-health" className="group block">
-          <div className="aspect-[4/3] bg-gray-100 mb-6 overflow-hidden">
-            <img 
-              src="https://images.unsplash.com/photo-1552674605-db6ffd4faceb?auto=format&fit=crop&q=80&w=800" 
-              alt="Runner" 
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-            />
-          </div>
-          <span className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-2 block">Nutrition</span>
-          <h2 className="text-3xl font-serif font-medium mb-3 group-hover:text-gray-600 transition-colors">
-            The 7-Day Gut Health Protocol
-          </h2>
-          <p className="text-gray-500 leading-relaxed">
-            Why most probiotics fail—and what actually works for your microbiome.
-          </p>
-        </Link>
-
-        {/* 文章卡片 2 - 占位 */}
-        <div className="flex flex-col justify-center border-t md:border-t-0 border-gray-100 pt-10 md:pt-0">
-          <div className="text-gray-300 font-serif italic text-xl mb-4">Coming Soon...</div>
-          <h3 className="text-xl font-medium text-gray-400">Sleep Optimization Guide</h3>
+      {/* 特色板块 */}
+      <section className="max-w-7xl mx-auto px-6 py-24">
+        <h2 className="text-4xl font-serif mb-12 text-center">Featured Collections</h2>
+        <div className="grid md:grid-cols-3 gap-8">
+          {['Nutrition', 'Fitness', 'Longevity'].map((item) => (
+            <div key={item} className="group cursor-pointer">
+              <div className="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
+                <div className="w-full h-full bg-gray-200 group-hover:scale-105 transition-transform duration-500"></div>
+              </div>
+              <h3 className="text-xl font-medium">{item}</h3>
+            </div>
+          ))}
         </div>
-
-      </div>
+      </section>
     </main>
   );
 }
