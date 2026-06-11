@@ -28,7 +28,7 @@ export default function ArtOfMovement() {
 
         {/* 按钮 1 */}
         <div className="my-8 text-center">
-          <a href="/go/holabird" className="inline-block px-10 py-4 bg-gray-900 text-white font-bold uppercase tracking-widest text-sm hover:bg-gray-600 transition-all">
+          <a href="/holabird" className="inline-block px-10 py-4 bg-gray-900 text-white font-bold uppercase tracking-widest text-sm hover:bg-gray-600 transition-all">
             Find Your Perfect Running Shoes
           </a>
         </div>
@@ -44,7 +44,7 @@ export default function ArtOfMovement() {
         {/* 品牌Logo集成 */}
         <div className="my-12 flex flex-col items-center">
           <p className="text-sm text-gray-400 mb-6 uppercase tracking-widest">Recommended Gear Partner</p>
-          <a href="/go/holabird" className="hover:opacity-80 transition-opacity">
+          <a href="/holabird" className="hover:opacity-80 transition-opacity">
              <img 
               src="https://www.pntrs.com/b/4-355093-287681-29923" 
               alt="Holabird Sports" 
@@ -59,7 +59,7 @@ export default function ArtOfMovement() {
 
         {/* 按钮 2 */}
         <div className="my-8 text-center">
-          <a href="/go/holabird" className="inline-block px-10 py-4 bg-white border-2 border-gray-900 text-gray-900 font-bold uppercase tracking-widest text-sm hover:bg-gray-900 hover:text-white transition-all">
+          <a href="/holabird" className="inline-block px-10 py-4 bg-white border-2 border-gray-900 text-gray-900 font-bold uppercase tracking-widest text-sm hover:bg-gray-900 hover:text-white transition-all">
             Browse Court & Performance Gear
           </a>
         </div>
