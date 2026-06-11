@@ -34,7 +34,7 @@ export default function Home() {
           <Link href="/posts/art-of-movement" className="group cursor-pointer">
             <div className="h-64 bg-gray-100 mb-4 overflow-hidden flex items-center justify-center">
               <img 
-                src="/hs1.jpg" 
+                src="/hs2.jpg" 
                 className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" 
                 alt="Movement" 
               />
