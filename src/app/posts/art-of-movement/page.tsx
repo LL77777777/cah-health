@@ -4,7 +4,7 @@ export default function ArtOfMovement() {
       {/* 顶部封面图 */}
       <div className="w-full aspect-[2/1] overflow-hidden mb-12 bg-gray-100">
         <img 
-          src="/HOKA1.jpg" 
+          src="/hoka1.jpg" 
           alt="Movement" 
           className="w-full h-full object-cover"
         />
