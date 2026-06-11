@@ -34,3 +34,44 @@ export default function ArtOfMovement() {
         </div>
 
         <h2 className="text-2xl font-serif mt-12 mb-4">2. Lateral Stability: The Secret to Court Health</h2>
+        <p>
+          Whether you play pickleball or tennis, movement isn't just forward—it's side-to-side. Most amateur athletes make the mistake of using running shoes for court sports. This is a recipe for a rolled ankle.
+        </p>
+        <p>
+          Court sports require a "low-to-ground" feel and rigid lateral support. When you move side-to-side, your shoe needs to be your anchor. If your gear lacks this, your body compensates, leading to long-term ligament fatigue.
+        </p>
+
+        {/* 品牌Logo集成 */}
+        <div className="my-12 flex flex-col items-center">
+          <p className="text-sm text-gray-400 mb-6 uppercase tracking-widest">Recommended Gear Partner</p>
+          <a href="/go/holabird" className="hover:opacity-80 transition-opacity">
+             <img 
+              src="https://www.pntrs.com/b/4-355093-287681-29923" 
+              alt="Holabird Sports" 
+              className="max-w-full h-auto" 
+            />
+          </a>
+        </div>
+
+        <p>
+          We’ve seen the industry evolve, and frankly, very few retailers get this balance right. <strong>Holabird Sports</strong> has been our go-to because they don't just sell "shoes"—they stock professional-grade equipment for people who respect their own body's mechanics.
+        </p>
+
+        {/* 按钮 2 */}
+        <div className="my-8 text-center">
+          <a href="/go/holabird" className="inline-block px-10 py-4 bg-white border-2 border-gray-900 text-gray-900 font-bold uppercase tracking-widest text-sm hover:bg-gray-900 hover:text-white transition-all">
+            Browse Court & Performance Gear
+          </a>
+        </div>
+
+        <h2 className="text-2xl font-serif mt-12 mb-4">The Investment</h2>
+        <p>
+          Think of your sports gear as an investment in your "movement budget." If you spend 5 hours a week moving, you are putting a lot of mileage on your joints. Don't cheap out on the only interface between you and the ground.
+        </p>
+        <p>
+          Stay active, stay intentional, and keep moving.
+        </p>
+      </article>
+    </main>
+  );
+}
