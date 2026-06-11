@@ -34,6 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div>
               <h4 className="font-bold text-gray-900 mb-4">Legal</h4>
               <ul className="space-y-2">
+                <li><a href="/about" className="hover:underline">About Us</a></li>
                 <li><a href="/privacy-policy" className="hover:underline">Privacy Policy</a></li>
                 <li><a href="/terms" className="hover:underline">Terms of Service</a></li>
                 <li><a href="/disclaimer" className="hover:underline">Affiliate Disclaimer</a></li>
@@ -41,7 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
             <div>
               <h4 className="font-bold text-gray-900 mb-4">Contact</h4>
-              <p>Business Inquiries: contact@cah-health.com</p>
+              <p>Business Inquiries: admin@cahhealth.com</p>
             </div>
           </div>
           <div className="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t text-center text-xs text-gray-400">
