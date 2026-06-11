@@ -32,11 +32,10 @@ export default function Home() {
           
           {/* 文章 1: Art of Movement */}
           <Link href="/posts/art-of-movement" className="group cursor-pointer">
-            <div className="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
-              {/* 修复后的图片代码 */}
+            <div className="h-64 bg-gray-100 mb-4 overflow-hidden flex items-center justify-center">
               <img 
                 src="/hs1.jpg" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" 
                 alt="Movement" 
               />
             </div>
@@ -46,8 +45,8 @@ export default function Home() {
 
           {/* 文章 2: Intermittent Fasting */}
           <Link href="/posts/intermittent-fasting" className="group cursor-pointer">
-            <div className="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Fasting" />
+            <div className="h-64 bg-gray-100 mb-4 overflow-hidden flex items-center justify-center">
+              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" alt="Fasting" />
             </div>
             <h3 className="text-xl font-medium">The 16:8 Protocol</h3>
             <p className="text-gray-500 text-sm mt-1">Why timing matters more than counting calories.</p>
@@ -55,8 +54,8 @@ export default function Home() {
 
           {/* 文章 3: Sleep Optimization */}
           <Link href="/posts/sleep-optimization" className="group cursor-pointer">
-            <div className="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Sleep" />
+            <div className="h-64 bg-gray-100 mb-4 overflow-hidden flex items-center justify-center">
+              <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" alt="Sleep" />
             </div>
             <h3 className="text-xl font-medium">Beyond Melatonin</h3>
             <p className="text-gray-500 text-sm mt-1">Mastering the art of deep, restorative sleep.</p>
