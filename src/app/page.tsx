@@ -42,7 +42,10 @@ export default function Home() {
           {/* 文章 2: Sleep Optimization */}
           <Link href="/posts/sleep-optimization" className="group cursor-pointer">
             <div className="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1541414779313-f542cc47a062?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Sleep" />
+              <img 
+  src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=800" 
+  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+  alt="Sleep" />
             </div>
             <h3 className="text-xl font-medium">Beyond Melatonin</h3>
             <p className="text-gray-500 text-sm mt-1">Mastering the art of deep, restorative sleep.</p>
