@@ -33,7 +33,12 @@ export default function Home() {
           {/* 文章 1: Art of Movement */}
           <Link href="/posts/art-of-movement" className="group cursor-pointer">
             <div className="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
-              <img src="/hs1.jpg">
+              {/* 修复后的图片代码 */}
+              <img 
+                src="/hs1.jpg" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                alt="Movement" 
+              />
             </div>
             <h3 className="text-xl font-medium">The Art of Movement</h3>
             <p className="text-gray-500 text-sm mt-1">Why fitness is a lifetime practice, not a weekly chore.</p>
