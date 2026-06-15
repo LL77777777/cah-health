@@ -7,7 +7,7 @@ export default function Home() {
       <section className="relative h-[80vh] flex items-center justify-center text-white">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/page2.jpg" 
+            src="/page3.jpg" 
             alt="Wellness Hero" 
             className="w-full h-full object-cover"
           />
