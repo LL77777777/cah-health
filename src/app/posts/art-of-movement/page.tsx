@@ -46,7 +46,7 @@ export default function ArtOfMovement() {
           <p className="text-sm text-gray-400 mb-6 uppercase tracking-widest">Recommended Gear Partner</p>
           <a href="/holabird" className="hover:opacity-80 transition-opacity">
              <img 
-              src="https://www.pntrs.com/b/4-355093-287681-29923" 
+              src="https://www.gopjn.com/b/4-355093-287681-29923" 
               alt="Holabird Sports" 
               className="max-w-full h-auto" 
             />
