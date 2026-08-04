@@ -1,9 +1,12 @@
 import Link from 'next/link';
+import { articles } from '@/data/articles';
 
 export default function Home() {
+  const featuredArticles = articles.filter((article) => article.featured);
+
   return (
     <main>
-      {/* 封面区 (Hero Section) */}
+      {/* Hero section */}
       <section className="relative h-[80vh] flex items-center justify-center text-white">
         <div className="absolute inset-0 z-0">
           <img 
@@ -25,42 +28,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 文章展示区 */}
+      {/* Featured articles */}
       <section className="max-w-7xl mx-auto px-6 py-24">
         <h2 className="text-4xl font-serif mb-12 text-center">Featured Articles</h2>
         <div className="grid md:grid-cols-3 gap-8">
-          
-          {/* 文章 1: Art of Movement */}
-          <Link href="/posts/art-of-movement" className="group cursor-pointer">
-            <div className="h-64 bg-gray-100 mb-4 overflow-hidden flex items-center justify-center">
-              <img 
-                src="/hs2.jpg" 
-                className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" 
-                alt="Movement" 
-              />
-            </div>
-            <h3 className="text-xl font-medium">The Art of Movement</h3>
-            <p className="text-gray-500 text-sm mt-1">Why fitness is a lifetime practice, not a weekly chore.</p>
-          </Link>
-
-          {/* 文章 2: Intermittent Fasting */}
-          <Link href="/posts/intermittent-fasting" className="group cursor-pointer">
-            <div className="h-64 bg-gray-100 mb-4 overflow-hidden flex items-center justify-center">
-              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" alt="Fasting" />
-            </div>
-            <h3 className="text-xl font-medium">The 16:8 Protocol</h3>
-            <p className="text-gray-500 text-sm mt-1">Why timing matters more than counting calories.</p>
-          </Link>
-
-          {/* 文章 3: Sleep Optimization */}
-          <Link href="/posts/sleep-optimization" className="group cursor-pointer">
-            <div className="h-64 bg-gray-100 mb-4 overflow-hidden flex items-center justify-center">
-              <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" alt="Sleep" />
-            </div>
-            <h3 className="text-xl font-medium">Beyond Melatonin</h3>
-            <p className="text-gray-500 text-sm mt-1">Mastering the art of deep, restorative sleep.</p>
-          </Link>
-
+          {featuredArticles.map((article) => (
+            <Link
+              key={article.slug}
+              href={`/posts/${article.slug}`}
+              className="group cursor-pointer"
+            >
+              <div className="h-64 bg-gray-100 mb-4 overflow-hidden flex items-center justify-center">
+                <img
+                  src={article.image}
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                  alt={article.imageAlt}
+                />
+              </div>
+              <h3 className="text-xl font-medium">{article.title}</h3>
+              <p className="text-gray-500 text-sm mt-1">{article.excerpt}</p>
+            </Link>
+          ))}
         </div>
       </section>
     </main>

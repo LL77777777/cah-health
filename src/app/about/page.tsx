@@ -39,7 +39,7 @@ export default function About() {
       
       <div className="mt-12 pt-8 border-t text-center">
         <p className="text-gray-500">Have a question or a product suggestion?</p>
-        <a href="mailto:contact@cah-health.com" className="font-bold underline">contact@cah-health.com</a>
+        <a href="mailto:admin@cahhealth.com" className="font-bold underline">admin@cahhealth.com</a>
       </div>
     </main>
   );

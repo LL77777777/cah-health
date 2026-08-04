@@ -1,7 +1,7 @@
 export default function ArtOfMovement() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-10">
-      {/* 顶部封面图 */}
+      {/* Article hero image */}
       <div className="w-full aspect-[2/1] overflow-hidden mb-12 bg-gray-100">
         <img 
           src="/hoka1.jpg" 
@@ -26,7 +26,7 @@ export default function ArtOfMovement() {
           Focus on shorter, quicker steps. And more importantly, ensure your footwear is designed for your specific foot strike. A neutral runner in stability shoes will feel sluggish; a runner needing support in a minimal shoe will feel broken.
         </p>
 
-        {/* 按钮 1 */}
+        {/* Primary affiliate call to action */}
         <div className="my-8 text-center">
           <a href="/holabird" className="inline-block px-10 py-4 bg-gray-900 text-white font-bold uppercase tracking-widest text-sm hover:bg-gray-600 transition-all">
             Find Your Perfect Running Shoes
@@ -41,7 +41,7 @@ export default function ArtOfMovement() {
           Court sports require a "low-to-ground" feel and rigid lateral support. When you move side-to-side, your shoe needs to be your anchor. If your gear lacks this, your body compensates, leading to long-term ligament fatigue.
         </p>
 
-        {/* 品牌Logo集成 */}
+        {/* Recommended partner creative */}
         <div className="my-12 flex flex-col items-center">
           <p className="text-sm text-gray-400 mb-6 uppercase tracking-widest">Recommended Gear Partner</p>
           <a href="/holabird" className="hover:opacity-80 transition-opacity">
@@ -57,7 +57,7 @@ export default function ArtOfMovement() {
           We’ve seen the industry evolve, and frankly, very few retailers get this balance right. <strong>Holabird Sports</strong> has been our go-to because they don't just sell "shoes"—they stock professional-grade equipment for people who respect their own body's mechanics.
         </p>
 
-        {/* 按钮 2 */}
+        {/* Secondary affiliate call to action */}
         <div className="my-8 text-center">
           <a href="/holabird" className="inline-block px-10 py-4 bg-white border-2 border-gray-900 text-gray-900 font-bold uppercase tracking-widest text-sm hover:bg-gray-900 hover:text-white transition-all">
             Browse Court & Performance Gear

@@ -14,7 +14,7 @@ export default function PrivacyPolicy() {
       <h2>3. Third-Party Links</h2>
       <p>Our site contains links to other websites. We are not responsible for the privacy practices of those sites.</p>
       
-      <p>If you have any questions, please contact us at <strong>contact@cah-health.com</strong>.</p>
+      <p>If you have any questions, please contact us at <strong>admin@cahhealth.com</strong>.</p>
     </main>
   );
 }

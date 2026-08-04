@@ -1,7 +1,7 @@
 export default function SleepPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-10">
-      {/* 封面图 */}
+      {/* Article hero image */}
 <div className="w-full aspect-[2/1] overflow-hidden mb-12 bg-gray-100">
   <img 
     src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=1200" 

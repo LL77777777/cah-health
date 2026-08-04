@@ -10,7 +10,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className="text-gray-900 antialiased">
-        {/* 导航栏 */}
+        {/* Primary navigation */}
         <nav className="sticky top-0 bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
           <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="/" className="text-2xl font-bold tracking-tighter">CAH<span className="text-gray-400">HEALTH</span></a>
@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {children}
 
-        {/* 底部合规栏 */}
+        {/* Site footer */}
         <footer className="bg-gray-50 border-t py-16 mt-20">
           <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-sm text-gray-500">
             <div>
