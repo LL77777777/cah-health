@@ -1,3 +1,13 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Service",
+  description: "Read the terms that apply when using cahhealth.com.",
+  alternates: {
+    canonical: "/terms",
+  },
+};
+
 export default function Terms() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-20 prose prose-lg">

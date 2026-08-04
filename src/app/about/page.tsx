@@ -1,3 +1,14 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Learn how the CAH Health Editorial Team approaches practical wellness guidance, product recommendations, and editorial transparency.",
+  alternates: {
+    canonical: "/about",
+  },
+};
+
 export default function About() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-20 prose prose-lg">

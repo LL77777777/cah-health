@@ -1,9 +1,18 @@
+import { ArticleByline } from "@/components/article-byline";
+import { ArticleJsonLd } from "@/components/article-json-ld";
+import { getArticleBySlug } from "@/data/articles";
+import { createArticleMetadata } from "@/lib/seo";
+
+const article = getArticleBySlug("gut-health");
+export const metadata = createArticleMetadata(article.slug);
+
 export default function GutHealthPage() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-20">
+      <ArticleJsonLd article={article} />
       <article className="prose prose-lg prose-slate mx-auto">
         <h1>The 7-Day Gut Health Protocol</h1>
-        <p className="text-gray-500 italic">By CAH Health Editorial Team</p>
+        <ArticleByline />
         
         <p>Most people struggle with digestion, yet few understand that the gut is the "second brain" of the body. In this guide, we break down a science-backed protocol to optimize your microbiome.</p>
         

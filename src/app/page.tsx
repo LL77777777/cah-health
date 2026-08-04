@@ -1,5 +1,14 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import { articles } from '@/data/articles';
+import { SITE_DESCRIPTION } from '@/lib/site';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/',
+  },
+  description: SITE_DESCRIPTION,
+};
 
 export default function Home() {
   const featuredArticles = articles.filter((article) => article.featured);

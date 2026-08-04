@@ -1,6 +1,16 @@
+import { ArticleByline } from "@/components/article-byline";
+import { ArticleJsonLd } from "@/components/article-json-ld";
+import { getArticleBySlug } from "@/data/articles";
+import { createArticleMetadata } from "@/lib/seo";
+import Link from "next/link";
+
+const article = getArticleBySlug("art-of-movement");
+export const metadata = createArticleMetadata(article.slug);
+
 export default function ArtOfMovement() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-10">
+      <ArticleJsonLd article={article} />
       {/* Article hero image */}
       <div className="w-full aspect-[2/1] overflow-hidden mb-12 bg-gray-100">
         <img 
@@ -12,7 +22,7 @@ export default function ArtOfMovement() {
 
       <article className="prose prose-lg prose-slate mx-auto">
         <h1 className="text-4xl font-serif mb-4">The Art of Movement: Why Fitness is a Lifetime Practice</h1>
-        <p className="text-gray-500 italic mb-12">— Editorial Staff</p>
+        <ArticleByline />
 
         <p className="text-xl leading-relaxed">
           There is a popular saying: <em>Life is movement.</em> It sounds simple, but in our modern, screen-bound reality, it’s a radical act. True fitness isn't about crushing a workout once a week; it’s about the way you move your body every single day.
@@ -62,6 +72,26 @@ export default function ArtOfMovement() {
           <a href="/holabird" className="inline-block px-10 py-4 bg-white border-2 border-gray-900 text-gray-900 font-bold uppercase tracking-widest text-sm hover:bg-gray-900 hover:text-white transition-all">
             Browse Court & Performance Gear
           </a>
+        </div>
+
+        <div className="my-12 p-8 bg-gray-50 border-l-4 border-gray-900">
+          <h2 className="!mt-0">Choose Footwear for the Way You Move</h2>
+          <p>
+            A comfortable running shoe and a stable court shoe solve different
+            movement problems. Start with our comparison of{" "}
+            <Link href="/posts/running-shoes-vs-pickleball-shoes">
+              running shoes and pickleball shoes
+            </Link>
+            , then learn how{" "}
+            <Link href="/posts/pickleball-shoes-vs-tennis-shoes">
+              tennis and pickleball shoes compare
+            </Link>{" "}
+            and how to choose for{" "}
+            <Link href="/posts/indoor-vs-outdoor-pickleball-shoes">
+              indoor and outdoor courts
+            </Link>
+            .
+          </p>
         </div>
 
         <h2 className="text-2xl font-serif mt-12 mb-4">The Investment</h2>

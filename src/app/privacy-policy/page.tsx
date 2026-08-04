@@ -1,3 +1,13 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "Read the CAH Health privacy policy.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+};
+
 export default function PrivacyPolicy() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-20 prose prose-lg">

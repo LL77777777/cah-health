@@ -10,6 +10,9 @@
   affiliate destinations, or credentials. Flag missing source material instead.
 - Health content is informational and must not be framed as individualized
   medical advice.
+- Keep articles evergreen by omitting visible publication and update dates unless
+  the user changes this policy. Do not add hidden date fields to structured data
+  when no corresponding date is shown to readers.
 
 ## Project structure
 
@@ -22,6 +25,9 @@
 - Supported categories are `nutrition`, `fitness`, and `lifestyle`.
 - Store local images in `public` and always provide useful English alt text.
 - Cloudflare Pages redirects live in `public/_redirects`.
+- Every article must have unique metadata, a canonical URL, an editorial byline,
+  Article JSON-LD, relevant internal links, and source links for factual health
+  or safety claims.
 
 ## Verification
 
@@ -34,7 +40,10 @@
 
 ## Git and deployment safety
 
-- Do not push, merge, alter Cloudflare settings, or deploy to production unless
-  the user explicitly requests that action.
-- Prefer a feature branch and Cloudflare preview deployment before production
-  changes when the user requests publishing.
+- Article publishing requests are pre-authorized for production: after the
+  article work and all required checks pass, commit the completed article changes,
+  push `main`, wait for Cloudflare Pages, and verify the live URLs.
+- If the user asks for a draft, review, preview, or explicitly says not to deploy,
+  keep the work local and do not push.
+- Non-article work still requires explicit user authorization before pushing,
+  merging, changing Cloudflare settings, or deploying to production.

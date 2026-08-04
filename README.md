@@ -30,8 +30,11 @@ The project uses Next.js static export. A production build is written to the
 - `src/app/page.tsx` controls the home page and featured articles.
 - `src/app/posts/<slug>/page.tsx` contains each article.
 - `src/data/articles.ts` is the article index used by category pages.
+- `src/lib/seo.ts` and `src/components/article-json-ld.tsx` provide article SEO
+  metadata and structured data.
 - `src/app/category/[slug]/page.tsx` generates Nutrition, Fitness, and Lifestyle
   category pages.
+- `src/app/sitemap.ts` and `src/app/robots.ts` expose crawl-discovery files.
 - `public` contains local images, favicons, and Cloudflare Pages redirects.
 
 When publishing an article, add its page, register its metadata in

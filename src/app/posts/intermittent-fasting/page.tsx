@@ -1,6 +1,15 @@
+import { ArticleByline } from "@/components/article-byline";
+import { ArticleJsonLd } from "@/components/article-json-ld";
+import { getArticleBySlug } from "@/data/articles";
+import { createArticleMetadata } from "@/lib/seo";
+
+const article = getArticleBySlug("intermittent-fasting");
+export const metadata = createArticleMetadata(article.slug);
+
 export default function FastingPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-10">
+      <ArticleJsonLd article={article} />
       {/* Article hero image */}
       <div className="w-full aspect-[2/1] overflow-hidden mb-12 bg-gray-100">
         <img 
@@ -12,7 +21,7 @@ export default function FastingPage() {
 
       <article className="prose prose-lg prose-slate mx-auto">
         <h1 className="text-4xl font-serif mb-4">The 16:8 Protocol: Why It’s Less About Dieting and More About Timing</h1>
-        <p className="text-gray-500 italic mb-12">— Editorial Staff</p>
+        <ArticleByline />
 
         <p className="text-xl leading-relaxed">
           The fitness industry loves to complicate nutrition. We count macros, track calories, and obsess over specific meal timings. But the most effective metabolic hack we’ve found at CAH Health isn't about <em>what</em> you eat, but <em>when</em> you stop eating.

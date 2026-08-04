@@ -1,3 +1,14 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Affiliate Disclaimer",
+  description:
+    "Learn how CAH Health uses affiliate links while maintaining editorial independence.",
+  alternates: {
+    canonical: "/disclaimer",
+  },
+};
+
 export default function Disclaimer() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-20 prose prose-lg">

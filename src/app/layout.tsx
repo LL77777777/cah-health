@@ -1,9 +1,21 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "CAH Health | Professional Wellness Curation",
-  description: "Curated wellness, fitness, and lifestyle advice.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${SITE_NAME} | Practical Wellness for Everyday Life`,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  openGraph: {
+    type: "website",
+    siteName: SITE_NAME,
+    title: `${SITE_NAME} | Practical Wellness for Everyday Life`,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

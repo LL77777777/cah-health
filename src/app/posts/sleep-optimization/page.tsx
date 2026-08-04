@@ -1,6 +1,15 @@
+import { ArticleByline } from "@/components/article-byline";
+import { ArticleJsonLd } from "@/components/article-json-ld";
+import { getArticleBySlug } from "@/data/articles";
+import { createArticleMetadata } from "@/lib/seo";
+
+const article = getArticleBySlug("sleep-optimization");
+export const metadata = createArticleMetadata(article.slug);
+
 export default function SleepPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-10">
+      <ArticleJsonLd article={article} />
       {/* Article hero image */}
 <div className="w-full aspect-[2/1] overflow-hidden mb-12 bg-gray-100">
   <img 
@@ -12,7 +21,7 @@ export default function SleepPage() {
 
       <article className="prose prose-lg prose-slate mx-auto">
         <h1 className="text-4xl font-serif mb-4">Beyond Melatonin: Mastering the Art of Deep Sleep</h1>
-        <p className="text-gray-500 italic mb-12">— Editorial Staff</p>
+        <ArticleByline />
 
         <p className="text-xl leading-relaxed">
           We’ve all had those mornings. You spend eight hours in bed, but you wake up feeling like you’ve been run over by a truck. You aren't tired because you lacked "time"—you're tired because your sleep wasn't restorative.

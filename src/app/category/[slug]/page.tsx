@@ -31,8 +31,11 @@ export function generateMetadata({ params }: CategoryPageProps): Metadata {
   const category = categoryDetails[params.slug];
 
   return {
-    title: `${category.name} | CAH Health`,
+    title: category.name,
     description: category.description,
+    alternates: {
+      canonical: `/category/${params.slug}`,
+    },
   };
 }
 
