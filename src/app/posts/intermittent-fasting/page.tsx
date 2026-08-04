@@ -24,31 +24,81 @@ export default function FastingPage() {
         <ArticleByline />
 
         <p className="text-xl leading-relaxed">
-          The fitness industry loves to complicate nutrition. We count macros, track calories, and obsess over specific meal timings. But the most effective metabolic hack we’ve found at CAH Health isn't about <em>what</em> you eat, but <em>when</em> you stop eating.
+          The 16:8 pattern is one form of time-restricted eating: meals are
+          consumed within an eight-hour window, followed by a sixteen-hour period
+          without calories. Some people find the schedule simple, but it is not a
+          universal solution and does not make food quality or total intake
+          irrelevant.
         </p>
 
         <h2 className="text-2xl font-serif mt-12 mb-4">The Hunger Wave</h2>
         <p>
-          Most people fail at intermittent fasting because they try to "power through" the hunger. If you’re white-knuckling your way to noon, you’re doing it wrong. The secret to the 16:8 protocol is recognizing that hunger is a wave, not a cliff. It rises, peaks, and then—crucially—recedes. 
+          Hunger can change throughout the day and may become easier or harder to
+          manage as routines change. Persistent dizziness, weakness, headaches,
+          or difficulty concentrating are not signals to ignore. Stop the fast
+          and seek appropriate medical guidance if symptoms concern you.
         </p>
         <p>
-          When you push your first meal to 12:00 PM, you’re giving your insulin levels a much-needed holiday. During those 16 hours of fasted state, your body isn't just "burning fat"—it's finally getting a chance to switch gears from glucose-dependency to metabolic flexibility. That sluggish, foggy feeling you get at 3:00 PM? That’s often just your body struggling to switch fuels.
+          During a fasting period, the body gradually changes how it uses stored
+          energy. That process does not guarantee weight loss or better health,
+          and research on the long-term effects of intermittent fasting in humans
+          remains incomplete. Meal timing is only one part of nutrition.
         </p>
 
         <h2 className="text-2xl font-serif mt-12 mb-4">Finding Your Rhythm</h2>
         <p>
-          We’ve noticed that people who succeed at 16:8 don’t treat it like a temporary diet. They treat it like a schedule. If you’re a morning person, you might prefer eating from 8:00 AM to 4:00 PM. If you enjoy social dinners, shift that window to 12:00 PM to 8:00 PM.
+          If a qualified professional agrees that time-restricted eating is
+          appropriate for you, choose a schedule you can follow without skipping
+          essential nutrition. An earlier window may suit some routines, while a
+          later window may fit social or work commitments better.
         </p>
         <p>
-          It isn’t about being perfect. If you break your fast at 11:30 AM one day because your body is genuinely asking for fuel, listen to it. The goal isn't to be a slave to the clock; the goal is to stop the constant snacking that keeps your system in a state of perpetual digestion.
+          Flexibility is more useful than treating the clock as a test of
+          willpower. A shorter eating window does not compensate for an
+          unbalanced diet, inadequate calories, poor sleep, or other health
+          needs.
         </p>
 
         <div className="my-12 p-8 bg-gray-50 border-l-4 border-gray-900">
-          <h3 className="font-serif text-lg font-bold mb-2">A Note on Electrolytes</h3>
+          <h3 className="font-serif text-lg font-bold mb-2">Safety Comes First</h3>
           <p className="text-gray-600">
-            One mistake we often see: people drinking gallon after gallon of plain water while fasting. You're flushing out minerals. If you find yourself getting irritable or developing a mild headache in the late morning, your body is likely signaling for sodium, potassium, and magnesium. Keep your electrolytes balanced—it makes the fasting window feel effortless.
+            Intermittent fasting may be inappropriate for children and teenagers,
+            people who are pregnant or breastfeeding, people with a history of
+            disordered eating, and some people taking medication or managing a
+            medical condition. Do not add electrolyte supplements or large
+            amounts of sodium or potassium simply to extend a fast without
+            professional guidance.
           </p>
         </div>
+
+        <h2>Sources and further reading</h2>
+        <ul>
+          <li>
+            <a
+              href="https://www.nia.nih.gov/news/calorie-restriction-and-fasting-diets-what-do-we-know"
+              target="_blank"
+              rel="noreferrer"
+            >
+              National Institute on Aging: Calorie restriction and fasting diets
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.nia.nih.gov/news/research-intermittent-fasting-shows-health-benefits"
+              target="_blank"
+              rel="noreferrer"
+            >
+              National Institute on Aging: Intermittent fasting research and its limits
+            </a>
+          </li>
+        </ul>
+        <p className="text-sm text-gray-500">
+          This article provides general educational information and is not
+          medical or nutritional advice. Consult a qualified healthcare
+          professional before fasting, especially if you have a medical
+          condition, take medication, are pregnant or breastfeeding, or have a
+          history of disordered eating.
+        </p>
       </article>
     </main>
   );

@@ -20,35 +20,79 @@ export default function SleepPage() {
 </div>
 
       <article className="prose prose-lg prose-slate mx-auto">
-        <h1 className="text-4xl font-serif mb-4">Beyond Melatonin: Mastering the Art of Deep Sleep</h1>
+        <h1 className="text-4xl font-serif mb-4">{article.headline}</h1>
         <ArticleByline />
 
         <p className="text-xl leading-relaxed">
-          We’ve all had those mornings. You spend eight hours in bed, but you wake up feeling like you’ve been run over by a truck. You aren't tired because you lacked "time"—you're tired because your sleep wasn't restorative.
+          Time in bed and sleep quality are related but not identical. A regular
+          schedule, the sleep environment, light exposure, stress, substances,
+          and health conditions can all affect how rested you feel.
         </p>
 
-        <h2 className="text-2xl font-serif mt-12 mb-4">The Cooling Theory</h2>
+        <h2 className="text-2xl font-serif mt-12 mb-4">Temperature and the Sleep Environment</h2>
         <p>
-          Your brain is obsessed with temperature. To trigger the onset of sleep, your body’s core temperature needs to drop by about one or two degrees. Modern bedrooms—with heavy comforters, central heating, and poor ventilation—are often working against this biological imperative.
+          Body temperature follows a daily rhythm, and many people sleep more
+          comfortably in a room that is cool, quiet, and dark. Heavy bedding,
+          poor ventilation, or a room that feels too warm can make comfort harder
+          to maintain.
         </p>
         <p>
-          If you wake up feeling "stuffy" or overheated, your body is struggling to regulate its temperature throughout the night. It’s an evolutionary quirk: in nature, as the sun goes down, the temperature drops, signaling that it’s time to hibernate. Our modern heating systems have essentially "lied" to our biology, keeping our systems alert when they should be shutting down.
+          There is no single ideal temperature for everyone. Adjust the room,
+          clothing, and bedding gradually, and avoid interpreting one difficult
+          night as proof of a specific biological problem.
         </p>
 
         <h2 className="text-2xl font-serif mt-12 mb-4">Light Is a Signal</h2>
         <p>
-          Melatonin supplements are the go-to solution for many, but they are often a band-aid for a circadian rhythm that is already misaligned. The real work isn't in what you swallow at 10:00 PM; it's in what you see at 8:00 AM. 
+          Light is an important signal for the sleep-wake cycle. Daytime light
+          exposure and dimmer light before bed can support a consistent routine,
+          while bright evening light may make it harder for some people to fall
+          asleep.
         </p>
         <p>
-          Getting natural sunlight in your eyes within 30 minutes of waking sets a timer for your cortisol and melatonin release 14–16 hours later. It’s the ultimate sleep hack. If you start your day in a dark room and end your day staring at a bright screen, you aren't just tired—you’re biologically confused.
+          Spend time outdoors during the day when practical, keep wake and sleep
+          times reasonably consistent, and reduce bright screens or room lighting
+          before bed. Melatonin supplements are not a substitute for evaluating
+          persistent sleep problems; discuss their use, timing, and possible
+          interactions with a qualified healthcare professional.
         </p>
 
         <div className="my-12 p-8 bg-gray-50 border-l-4 border-gray-900">
           <h3 className="font-serif text-lg font-bold mb-2">The Night Routine</h3>
           <p className="text-gray-600">
-            We've found that the best sleep aids are often boring. It’s a cool room, a consistent schedule, and reading a physical book rather than scrolling through a phone. If you struggle to disconnect, focus on reducing your room temp and dimming the lights two hours before you intend to hit the pillow. Sometimes, doing less is actually the most sophisticated way to improve your recovery.
+            Start with repeatable basics: allow enough time for sleep, keep a
+            consistent schedule, make the room comfortable, and choose a quiet
+            wind-down activity instead of bright or stimulating content. Change
+            one variable at a time so you can tell what is actually useful.
           </p>
         </div>
+
+        <h2>Sources and further reading</h2>
+        <ul>
+          <li>
+            <a
+              href="https://www.nhlbi.nih.gov/health/sleep-deprivation/healthy-sleep-habits"
+              target="_blank"
+              rel="noreferrer"
+            >
+              National Heart, Lung, and Blood Institute: Healthy sleep habits
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.nhlbi.nih.gov/health/sleep-deprivation/body-clock"
+              target="_blank"
+              rel="noreferrer"
+            >
+              National Heart, Lung, and Blood Institute: The sleep-wake cycle
+            </a>
+          </li>
+        </ul>
+        <p className="text-sm text-gray-500">
+          This article provides general educational information, not medical
+          advice. Speak with a qualified healthcare professional if sleep problems
+          are persistent, severe, or affecting your safety or daily function.
+        </p>
       </article>
     </main>
   );

@@ -19,17 +19,23 @@ export default function About() {
 
       <h2>Our Mission</h2>
       <p>
-        In an age of information overload, finding reliable health advice can be exhausting. Our mission is simple: <strong>to curate the noise.</strong> We act as your filter, bringing you science-backed insights and high-quality lifestyle recommendations that genuinely move the needle on your wellbeing.
+        In an age of information overload, finding useful health information can
+        be exhausting. Our mission is simple: <strong>to curate the noise.</strong>
+        We bring together evidence-aware explanations and practical lifestyle
+        guidance, while making the limits of general information clear.
       </p>
 
       <h2>The "CAH" Standard</h2>
       <p>
-        We don't recommend products we haven't vetted. Our editorial process focuses on three pillars:
+        Our editorial process distinguishes between hands-on testing and
+        research based on reliable sources, product specifications, and practical
+        use cases. We do not claim to have personally tested a product unless we
+        have done so. Our work focuses on three pillars:
       </p>
       <ul>
-        <li><strong>Efficacy:</strong> Does it actually work? We prioritize science-backed solutions.</li>
-        <li><strong>Quality:</strong> We favor durability, clean ingredients, and craftsmanship over trends.</li>
-        <li><strong>Intentionality:</strong> Every product we feature is selected because it serves a specific purpose in a high-performance lifestyle.</li>
+        <li><strong>Evidence:</strong> Are the claims supported by credible sources, and are important limitations explained?</li>
+        <li><strong>Quality:</strong> Do the construction, specifications, and intended use support the product&apos;s stated purpose?</li>
+        <li><strong>Relevance:</strong> Does the information help a reader make a more informed, practical choice?</li>
       </ul>
 
       <h2>Transparency & Trust</h2>
@@ -37,7 +43,10 @@ export default function About() {
         To keep this site running, we participate in affiliate programs. This means when you click on some of our links and make a purchase, we may earn a small commission—at no extra cost to you. 
       </p>
       <p>
-        However, <strong>our independence is non-negotiable.</strong> We never accept payment to write positive reviews for products we don't believe in. Our reputation with you is worth far more than any commission check.
+        Affiliate compensation does not determine our conclusions or guarantee a
+        positive assessment. Sponsored content, if we publish it, will be clearly
+        identified. Read our <a href="/disclaimer">Affiliate Disclaimer</a> for
+        more information.
       </p>
 
       <h2>Join Our Journey</h2>

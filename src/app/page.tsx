@@ -29,7 +29,8 @@ export default function Home() {
         <div className="relative z-10 text-center px-6">
           <h1 className="text-5xl md:text-7xl font-serif font-medium mb-6">Redefining Modern Wellness</h1>
           <p className="text-lg md:text-xl font-light mb-8 max-w-2xl mx-auto">
-            Curated, science-backed insights for longevity, performance, and intentional living.
+            Independent, evidence-aware guidance for movement, everyday wellness,
+            and intentional living.
           </p>
           <Link href="/posts/art-of-movement" className="inline-block bg-white text-black px-8 py-4 font-bold uppercase tracking-widest text-sm hover:bg-gray-200 transition-all">
             Read Our Latest

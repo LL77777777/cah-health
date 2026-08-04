@@ -11,10 +11,15 @@ export default function GutHealthPage() {
     <main className="max-w-3xl mx-auto px-6 py-20">
       <ArticleJsonLd article={article} />
       <article className="prose prose-lg prose-slate mx-auto">
-        <h1>The 7-Day Gut Health Protocol</h1>
+        <h1>{article.headline}</h1>
         <ArticleByline />
         
-        <p>Most people struggle with digestion, yet few understand that the gut is the "second brain" of the body. In this guide, we break down a science-backed protocol to optimize your microbiome.</p>
+        <p>
+          Digestive responses are highly individual, and no seven-day plan can
+          “reset” or optimize the microbiome. This short guide is a practical way
+          to observe your routine and build gradual, food-first habits without
+          promising a specific health outcome.
+        </p>
         
         <h2>Build a Food-First Foundation</h2>
         <p>
@@ -33,6 +38,24 @@ export default function GutHealthPage() {
             supplement.
           </p>
         </div>
+
+        <h2>Sources and further reading</h2>
+        <ul>
+          <li>
+            <a
+              href="https://www.niddk.nih.gov/health-information/digestive-diseases/irritable-bowel-syndrome/eating-diet-nutrition"
+              target="_blank"
+              rel="noreferrer"
+            >
+              NIDDK: Eating, diet, and nutrition for irritable bowel syndrome
+            </a>
+          </li>
+        </ul>
+        <p className="text-sm text-gray-500">
+          This article provides general educational information, not a diagnosis
+          or individualized nutrition advice. Seek medical care for persistent,
+          severe, or worsening digestive symptoms.
+        </p>
       </article>
     </main>
   );

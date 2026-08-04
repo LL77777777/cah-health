@@ -1,5 +1,9 @@
 import { ArticleByline } from "@/components/article-byline";
 import { ArticleJsonLd } from "@/components/article-json-ld";
+import {
+  AffiliateDisclosure,
+  AffiliateLinkLabel,
+} from "@/components/affiliate-disclosure";
 import { getArticleBySlug } from "@/data/articles";
 import { createArticleMetadata } from "@/lib/seo";
 import Link from "next/link";
@@ -23,6 +27,7 @@ export default function ArtOfMovement() {
       <article className="prose prose-lg prose-slate mx-auto">
         <h1 className="text-4xl font-serif mb-4">The Art of Movement: Why Fitness is a Lifetime Practice</h1>
         <ArticleByline />
+        <AffiliateDisclosure />
 
         <p className="text-xl leading-relaxed">
           There is a popular saying: <em>Life is movement.</em> It sounds simple, but in our modern, screen-bound reality, it’s a radical act. True fitness isn't about crushing a workout once a week; it’s about the way you move your body every single day.
@@ -30,30 +35,44 @@ export default function ArtOfMovement() {
 
         <h2 className="text-2xl font-serif mt-12 mb-4">1. The Impact Myth: Run Smarter, Not Harder</h2>
         <p>
-          Many people quit running because of "shin splints" or knee fatigue. The secret to sustainable running isn't just willpower—it's <strong>cadence and cushioning</strong>. If your stride is too long, you are slamming your heel into the pavement, sending shockwaves straight to your joints.
+          Running comfort depends on more than willpower or a single piece of
+          equipment. Training load, recovery, running form, strength, previous
+          injuries, and footwear can all matter. Gradual progression and a shoe
+          that fits securely are more useful starting points than chasing one
+          universal cadence or cushioning formula.
         </p>
         <p>
-          Focus on shorter, quicker steps. And more importantly, ensure your footwear is designed for your specific foot strike. A neutral runner in stability shoes will feel sluggish; a runner needing support in a minimal shoe will feel broken.
+          Different runners prefer different levels of cushioning and support.
+          Rather than assigning yourself a shoe category from a single wear
+          pattern, consider comfort, fit, the surface you use, and guidance from a
+          qualified professional when pain or recurring problems are involved.
         </p>
 
         {/* Primary affiliate call to action */}
         <div className="my-8 text-center">
           <a href="/holabird" className="inline-block px-10 py-4 bg-gray-900 text-white font-bold uppercase tracking-widest text-sm hover:bg-gray-600 transition-all">
-            Find Your Perfect Running Shoes
+            Explore Running Shoes
           </a>
+          <AffiliateLinkLabel />
         </div>
 
-        <h2 className="text-2xl font-serif mt-12 mb-4">2. Lateral Stability: The Secret to Court Health</h2>
+        <h2 className="text-2xl font-serif mt-12 mb-4">2. Lateral Stability for Court Movement</h2>
         <p>
-          Whether you play pickleball or tennis, movement isn't just forward—it's side-to-side. Most amateur athletes make the mistake of using running shoes for court sports. This is a recipe for a rolled ankle.
+          Pickleball and tennis involve side-to-side movement, short sprints,
+          stops, and pivots. Running shoes are primarily designed for repeated
+          forward motion, so many players find that a stable court shoe is better
+          matched to regular court play.
         </p>
         <p>
-          Court sports require a "low-to-ground" feel and rigid lateral support. When you move side-to-side, your shoe needs to be your anchor. If your gear lacks this, your body compensates, leading to long-term ligament fatigue.
+          Look for a secure heel and midfoot, a stable platform, and an outsole
+          suited to the actual court surface. No shoe can eliminate injury risk,
+          and fit and construction matter more than whether the box uses the word
+          “pickleball.”
         </p>
 
         {/* Recommended partner creative */}
         <div className="my-12 flex flex-col items-center">
-          <p className="text-sm text-gray-400 mb-6 uppercase tracking-widest">Recommended Gear Partner</p>
+          <p className="text-sm text-gray-500 mb-6 uppercase tracking-widest">Featured Retailer</p>
           <a href="/holabird" className="hover:opacity-80 transition-opacity">
              <img 
               src="https://www.gopjn.com/b/4-355093-287681-29923" 
@@ -61,10 +80,14 @@ export default function ArtOfMovement() {
               className="max-w-full h-auto" 
             />
           </a>
+          <AffiliateLinkLabel />
         </div>
 
         <p>
-          We’ve seen the industry evolve, and frankly, very few retailers get this balance right. <strong>Holabird Sports</strong> has been our go-to because they don't just sell "shoes"—they stock professional-grade equipment for people who respect their own body's mechanics.
+          <strong>Holabird Sports</strong> carries running and court footwear
+          across a range of brands and intended uses. Compare the specifications,
+          fit options, return terms, price, and current availability before
+          deciding whether a particular model suits your needs.
         </p>
 
         {/* Secondary affiliate call to action */}
@@ -72,6 +95,7 @@ export default function ArtOfMovement() {
           <a href="/holabird" className="inline-block px-10 py-4 bg-white border-2 border-gray-900 text-gray-900 font-bold uppercase tracking-widest text-sm hover:bg-gray-900 hover:text-white transition-all">
             Browse Court & Performance Gear
           </a>
+          <AffiliateLinkLabel />
         </div>
 
         <div className="my-12 p-8 bg-gray-50 border-l-4 border-gray-900">
@@ -96,10 +120,17 @@ export default function ArtOfMovement() {
 
         <h2 className="text-2xl font-serif mt-12 mb-4">The Investment</h2>
         <p>
-          Think of your sports gear as an investment in your "movement budget." If you spend 5 hours a week moving, you are putting a lot of mileage on your joints. Don't cheap out on the only interface between you and the ground.
+          Price alone does not determine whether a shoe is appropriate. Prioritize
+          fit, surface, stability, and condition, then choose the option that makes
+          sense for how often you move and what you can comfortably spend.
         </p>
         <p>
           Stay active, stay intentional, and keep moving.
+        </p>
+        <p className="text-sm text-gray-500">
+          This article provides general educational information, not medical or
+          individualized footwear advice. Consult a qualified professional about
+          persistent pain, instability, or a previous injury.
         </p>
       </article>
     </main>

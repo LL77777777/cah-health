@@ -56,10 +56,10 @@ export const articles: Article[] = [
   },
   {
     slug: "gut-health",
-    title: "The 7-Day Gut Health Protocol",
-    seoTitle: "7-Day Gut Health Protocol: A Food-First Foundation",
-    headline: "The 7-Day Gut Health Protocol",
-    excerpt: "A food-first foundation for supporting digestion and a diverse microbiome.",
+    title: "A 7-Day Gut-Friendly Reset",
+    seoTitle: "7-Day Gut-Friendly Reset: A Food-First Foundation",
+    headline: "A 7-Day Gut-Friendly Reset",
+    excerpt: "A measured, food-first foundation for supporting everyday digestive health.",
     category: "nutrition",
     image: "/page1.jpg",
     imageAlt: "A person enjoying time outdoors",
@@ -68,9 +68,9 @@ export const articles: Article[] = [
   {
     slug: "sleep-optimization",
     title: "Beyond Melatonin",
-    seoTitle: "Beyond Melatonin: A Practical Guide to Deeper Sleep",
-    headline: "Beyond Melatonin: Mastering the Art of Deep Sleep",
-    excerpt: "Mastering the foundations of deep, restorative sleep.",
+    seoTitle: "Beyond Melatonin: Practical Habits for Better Sleep",
+    headline: "Beyond Melatonin: Practical Foundations for Better Sleep",
+    excerpt: "Practical foundations for a more consistent sleep routine.",
     category: "lifestyle",
     image:
       "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=800",

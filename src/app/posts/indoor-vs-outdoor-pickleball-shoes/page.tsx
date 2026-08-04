@@ -1,6 +1,10 @@
 import Link from "next/link";
 import { ArticleByline } from "@/components/article-byline";
 import { ArticleJsonLd } from "@/components/article-json-ld";
+import {
+  AffiliateDisclosure,
+  AffiliateLinkLabel,
+} from "@/components/affiliate-disclosure";
 import { getArticleBySlug } from "@/data/articles";
 import { createArticleMetadata } from "@/lib/seo";
 
@@ -26,6 +30,7 @@ export default function IndoorVsOutdoorPickleballShoesPage() {
         </p>
         <h1>{article.headline}</h1>
         <ArticleByline />
+        <AffiliateDisclosure />
 
         <p className="lead">
           <strong>Short answer:</strong> choose pickleball shoes for the playing
@@ -221,10 +226,7 @@ export default function IndoorVsOutdoorPickleballShoesPage() {
           >
             Browse Court Footwear
           </a>
-          <p className="mt-3 text-xs text-gray-500">
-            Affiliate link. CAH Health may earn a commission at no extra cost to
-            you.
-          </p>
+          <AffiliateLinkLabel />
         </div>
 
         <h2>Sources and further reading</h2>

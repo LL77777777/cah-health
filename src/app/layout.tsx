@@ -41,7 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-sm text-gray-500">
             <div>
               <h4 className="font-bold text-gray-900 mb-4">CAH Health</h4>
-              <p>Curated wellness for a better lifestyle. Science-backed, community-driven.</p>
+              <p>Independent, evidence-aware guidance for everyday wellness.</p>
             </div>
             <div>
               <h4 className="font-bold text-gray-900 mb-4">Legal</h4>

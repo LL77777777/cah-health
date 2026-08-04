@@ -13,13 +13,43 @@ export default function Disclaimer() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-20 prose prose-lg">
       <h1>Affiliate Disclaimer</h1>
-      <p>Some of the links on cahhealth.com are "affiliate links." This means if you click on the link and purchase the item, we will receive an affiliate commission at no extra cost to you.</p>
-      
-      <h2>Amazon Associates Program</h2>
-      <p>CAH Health is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.</p>
-      
-      <h2>Our Integrity</h2>
-      <p>We only recommend products that we believe provide value to our readers. Our reviews are based on thorough research, not on the commission we receive.</p>
+      <p>
+        CAH Health is an independent editorial website. Some links on this site
+        are affiliate links. If you click one of these links and complete a
+        qualifying purchase, CAH Health may receive a commission at no additional
+        cost to you.
+      </p>
+
+      <h2>Our Affiliate Relationships</h2>
+      <p>
+        We may work with retailers, marketplaces, brands, and affiliate networks.
+        These relationships and the merchants available through them can change
+        over time. Not every link is an affiliate link, and the presence of an
+        affiliate link does not mean that a merchant sponsors, owns, or controls
+        CAH Health.
+      </p>
+      <p>
+        Affiliate links may use cookies or similar identifiers so a merchant or
+        affiliate network can attribute a purchase to CAH Health. The merchant or
+        network handles that information under its own privacy policy.
+      </p>
+
+      <h2>Amazon Associates</h2>
+      <p>
+        CAH Health may also use Amazon affiliate links. When those links are used,
+        the following disclosure applies:{" "}
+        <strong>As an Amazon Associate I earn from qualifying purchases.</strong>
+      </p>
+
+      <h2>Editorial Independence</h2>
+      <p>
+        Compensation does not determine our editorial conclusions. Unless we
+        clearly say that a product was personally tested, recommendations and
+        comparisons are based on editorial research, available specifications,
+        cited sources, and the practical relevance of the product to the topic.
+        Prices, availability, and product details can change, so readers should
+        confirm current information with the seller before purchasing.
+      </p>
     </main>
   );
 }
