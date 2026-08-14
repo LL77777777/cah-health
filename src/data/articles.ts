@@ -32,6 +32,19 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: "raen-sunglasses-buying-guide",
+    title: "RAEN Sunglasses Buying Guide",
+    seoTitle: "RAEN Sunglasses Guide: Remmy, Wiley, Fit & Offers",
+    headline: "RAEN Sunglasses Buying Guide: Remmy, Wiley, Fit, Lenses, and Current Offers",
+    excerpt:
+      "Compare Remmy and Wiley sizes, polarized lenses, fit, pricing, current offers, shipping, returns, and warranty terms.",
+    category: "lifestyle",
+    image: "/raen-sunglasses-guide.svg",
+    imageAlt:
+      "Editorial illustration of round and square sunglasses for the RAEN buying guide",
+    featured: false,
+  },
+  {
     slug: "art-of-movement",
     title: "The Art of Movement",
     seoTitle: "The Art of Movement: Fitness as a Lifetime Practice",

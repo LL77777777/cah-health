@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const featuredArticles = articles.filter((article) => article.featured);
+  const moreGuides = articles.filter((article) => !article.featured);
 
   return (
     <main>
@@ -59,6 +60,31 @@ export default function Home() {
               <p className="text-gray-500 text-sm mt-1">{article.excerpt}</p>
             </Link>
           ))}
+        </div>
+      </section>
+
+      <section className="border-t border-gray-100 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6 py-24">
+          <h2 className="text-4xl font-serif mb-12 text-center">More Guides</h2>
+          <div className="grid md:grid-cols-3 gap-x-8 gap-y-12">
+            {moreGuides.map((article) => (
+              <Link
+                key={article.slug}
+                href={`/posts/${article.slug}`}
+                className="group cursor-pointer"
+              >
+                <div className="h-64 bg-white mb-4 overflow-hidden flex items-center justify-center">
+                  <img
+                    src={article.image}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    alt={article.imageAlt}
+                  />
+                </div>
+                <h3 className="text-xl font-medium">{article.title}</h3>
+                <p className="text-gray-500 text-sm mt-1">{article.excerpt}</p>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
     </main>
