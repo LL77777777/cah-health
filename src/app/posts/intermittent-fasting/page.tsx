@@ -1,5 +1,6 @@
 import { ArticleByline } from "@/components/article-byline";
 import { ArticleJsonLd } from "@/components/article-json-ld";
+import { RelatedArticles } from "@/components/related-articles";
 import { getArticleBySlug } from "@/data/articles";
 import { createArticleMetadata } from "@/lib/seo";
 
@@ -99,6 +100,7 @@ export default function FastingPage() {
           condition, take medication, are pregnant or breastfeeding, or have a
           history of disordered eating.
         </p>
+        <RelatedArticles article={article} />
       </article>
     </main>
   );

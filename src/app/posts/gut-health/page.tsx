@@ -1,5 +1,6 @@
 import { ArticleByline } from "@/components/article-byline";
 import { ArticleJsonLd } from "@/components/article-json-ld";
+import { RelatedArticles } from "@/components/related-articles";
 import { getArticleBySlug } from "@/data/articles";
 import { createArticleMetadata } from "@/lib/seo";
 
@@ -56,6 +57,7 @@ export default function GutHealthPage() {
           or individualized nutrition advice. Seek medical care for persistent,
           severe, or worsening digestive symptoms.
         </p>
+        <RelatedArticles article={article} />
       </article>
     </main>
   );

@@ -1,16 +1,19 @@
 export const categoryDetails = {
   nutrition: {
     name: "Nutrition",
+    lastModified: "2026-08-04",
     description:
       "Practical guidance for eating with intention, supporting metabolic health, and building sustainable habits.",
   },
   fitness: {
     name: "Fitness",
+    lastModified: "2026-08-04",
     description:
       "Thoughtful approaches to movement, performance, recovery, and staying active for life.",
   },
   lifestyle: {
     name: "Lifestyle",
+    lastModified: "2026-08-15",
     description:
       "Evidence-aware ideas for better sleep, daily balance, and a more intentional approach to wellbeing.",
   },
@@ -20,6 +23,7 @@ export type CategorySlug = keyof typeof categoryDetails;
 
 export type Article = {
   slug: string;
+  lastModified: string;
   title: string;
   seoTitle: string;
   headline: string;
@@ -28,11 +32,13 @@ export type Article = {
   image: string;
   imageAlt: string;
   featured: boolean;
+  relatedSlugs: string[];
 };
 
 export const articles: Article[] = [
   {
     slug: "raen-sunglasses-buying-guide",
+    lastModified: "2026-08-30",
     title: "RAEN Sunglasses Buying Guide",
     seoTitle: "RAEN Sunglasses Guide: Remmy, Wiley, Fit & Offers",
     headline: "RAEN Sunglasses Buying Guide: Remmy, Wiley, Fit, Lenses, and Current Offers",
@@ -43,9 +49,11 @@ export const articles: Article[] = [
     imageAlt:
       "Editorial illustration of round and square sunglasses for the RAEN buying guide",
     featured: false,
+    relatedSlugs: [],
   },
   {
     slug: "art-of-movement",
+    lastModified: "2026-08-30",
     title: "The Art of Movement",
     seoTitle: "The Art of Movement: Fitness as a Lifetime Practice",
     headline: "The Art of Movement: Why Fitness Is a Lifetime Practice",
@@ -54,9 +62,15 @@ export const articles: Article[] = [
     image: "/hs2.jpg",
     imageAlt: "Performance footwear for an active lifestyle",
     featured: true,
+    relatedSlugs: [
+      "running-shoes-vs-pickleball-shoes",
+      "pickleball-shoes-vs-tennis-shoes",
+      "indoor-vs-outdoor-pickleball-shoes",
+    ],
   },
   {
     slug: "intermittent-fasting",
+    lastModified: "2026-08-30",
     title: "The 16:8 Protocol",
     seoTitle: "16:8 Intermittent Fasting: Timing and Common Mistakes",
     headline: "The 16:8 Protocol: Why It’s Less About Dieting and More About Timing",
@@ -66,9 +80,11 @@ export const articles: Article[] = [
       "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800",
     imageAlt: "A colorful bowl of vegetables",
     featured: false,
+    relatedSlugs: ["gut-health", "sleep-optimization"],
   },
   {
     slug: "gut-health",
+    lastModified: "2026-08-30",
     title: "A 7-Day Gut-Friendly Reset",
     seoTitle: "7-Day Gut-Friendly Reset: A Food-First Foundation",
     headline: "A 7-Day Gut-Friendly Reset",
@@ -77,9 +93,11 @@ export const articles: Article[] = [
     image: "/page1.jpg",
     imageAlt: "A person enjoying time outdoors",
     featured: false,
+    relatedSlugs: ["intermittent-fasting", "sleep-optimization"],
   },
   {
     slug: "sleep-optimization",
+    lastModified: "2026-08-30",
     title: "Beyond Melatonin",
     seoTitle: "Beyond Melatonin: Practical Habits for Better Sleep",
     headline: "Beyond Melatonin: Practical Foundations for Better Sleep",
@@ -89,9 +107,11 @@ export const articles: Article[] = [
       "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=800",
     imageAlt: "A calm bedroom prepared for sleep",
     featured: true,
+    relatedSlugs: ["intermittent-fasting", "gut-health"],
   },
   {
     slug: "running-shoes-vs-pickleball-shoes",
+    lastModified: "2026-08-30",
     title: "Running Shoes vs. Pickleball Shoes",
     seoTitle: "Running Shoes vs. Pickleball Shoes: What to Wear",
     headline: "Can You Wear Running Shoes for Pickleball? Court Shoes vs. Running Shoes",
@@ -101,9 +121,15 @@ export const articles: Article[] = [
     image: "/running-vs-pickleball-shoes.webp",
     imageAlt: "A cushioned running shoe beside a low-profile court shoe",
     featured: true,
+    relatedSlugs: [
+      "pickleball-shoes-vs-tennis-shoes",
+      "indoor-vs-outdoor-pickleball-shoes",
+      "art-of-movement",
+    ],
   },
   {
     slug: "pickleball-shoes-vs-tennis-shoes",
+    lastModified: "2026-08-30",
     title: "Pickleball Shoes vs. Tennis Shoes",
     seoTitle: "Pickleball Shoes vs. Tennis Shoes: Key Differences",
     headline: "Pickleball Shoes vs. Tennis Shoes: What’s Actually Different?",
@@ -113,9 +139,15 @@ export const articles: Article[] = [
     image: "/pickleball-vs-tennis-shoes.webp",
     imageAlt: "Two low-profile court shoes on a blue and green hard court",
     featured: false,
+    relatedSlugs: [
+      "running-shoes-vs-pickleball-shoes",
+      "indoor-vs-outdoor-pickleball-shoes",
+      "art-of-movement",
+    ],
   },
   {
     slug: "indoor-vs-outdoor-pickleball-shoes",
+    lastModified: "2026-08-30",
     title: "Indoor vs. Outdoor Pickleball Shoes",
     seoTitle: "Indoor vs. Outdoor Pickleball Shoes: What to Choose",
     headline: "Indoor vs. Outdoor Pickleball Shoes: Grip, Soles, and Durability",
@@ -125,6 +157,11 @@ export const articles: Article[] = [
     image: "/indoor-vs-outdoor-pickleball-shoes.webp",
     imageAlt: "An indoor court shoe beside an outdoor hard-court shoe",
     featured: false,
+    relatedSlugs: [
+      "running-shoes-vs-pickleball-shoes",
+      "pickleball-shoes-vs-tennis-shoes",
+      "art-of-movement",
+    ],
   },
 ];
 

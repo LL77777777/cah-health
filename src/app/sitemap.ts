@@ -4,18 +4,29 @@ import { absoluteUrl } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
-    "",
-    "/about",
-    "/privacy-policy",
-    "/terms",
-    "/disclaimer",
+    { route: "", lastModified: "2026-08-30" },
+    { route: "/about", lastModified: "2026-08-04" },
+    { route: "/privacy-policy", lastModified: "2026-08-04" },
+    { route: "/terms", lastModified: "2026-08-04" },
+    { route: "/disclaimer", lastModified: "2026-08-04" },
   ];
-  const categoryRoutes = Object.keys(categoryDetails).map(
-    (slug) => `/category/${slug}`,
+  const categoryRoutes = Object.entries(categoryDetails).map(
+    ([slug, category]) => ({
+      url: absoluteUrl(`/category/${slug}`),
+      lastModified: category.lastModified,
+    }),
   );
-  const articleRoutes = articles.map((article) => `/posts/${article.slug}`);
-
-  return [...staticRoutes, ...categoryRoutes, ...articleRoutes].map((route) => ({
-    url: absoluteUrl(route || "/"),
+  const articleRoutes = articles.map((article) => ({
+    url: absoluteUrl(`/posts/${article.slug}`),
+    lastModified: article.lastModified,
   }));
+
+  return [
+    ...staticRoutes.map(({ route, lastModified }) => ({
+      url: absoluteUrl(route || "/"),
+      lastModified,
+    })),
+    ...categoryRoutes,
+    ...articleRoutes,
+  ];
 }

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArticleByline } from "@/components/article-byline";
 import { ArticleJsonLd } from "@/components/article-json-ld";
+import { RelatedArticles } from "@/components/related-articles";
 import {
   AffiliateDisclosure,
   AffiliateLinkLabel,
@@ -250,6 +251,7 @@ export default function RunningShoesVsPickleballShoesPage() {
           individualized footwear advice. Consult a qualified professional if you
           have persistent pain, instability, or a previous injury.
         </p>
+        <RelatedArticles article={article} />
       </article>
     </main>
   );

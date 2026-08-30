@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { articles } from '@/data/articles';
+import { HomepageAffiliateBanner } from '@/components/homepage-affiliate-banner';
 import { SITE_DESCRIPTION } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -62,6 +63,8 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <HomepageAffiliateBanner />
 
       <section className="border-t border-gray-100 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 py-24">

@@ -1,5 +1,6 @@
 import { ArticleByline } from "@/components/article-byline";
 import { ArticleJsonLd } from "@/components/article-json-ld";
+import { RelatedArticles } from "@/components/related-articles";
 import { getArticleBySlug } from "@/data/articles";
 import { createArticleMetadata } from "@/lib/seo";
 
@@ -93,6 +94,7 @@ export default function SleepPage() {
           advice. Speak with a qualified healthcare professional if sleep problems
           are persistent, severe, or affecting your safety or daily function.
         </p>
+        <RelatedArticles article={article} />
       </article>
     </main>
   );

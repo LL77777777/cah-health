@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArticleByline } from "@/components/article-byline";
 import { ArticleJsonLd } from "@/components/article-json-ld";
+import { RelatedArticles } from "@/components/related-articles";
 import {
   AffiliateDisclosure,
   AffiliateLinkLabel,
@@ -247,6 +248,7 @@ export default function PickleballShoesVsTennisShoesPage() {
           This article provides general educational information, not medical or
           individualized footwear advice.
         </p>
+        <RelatedArticles article={article} />
       </article>
     </main>
   );
