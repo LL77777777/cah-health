@@ -1,5 +1,5 @@
-const bannerHref = "https://www.pntra.com/t/8-11725-287681-162631";
-const bannerImage = "https://www.pntrac.com/b/4-536758-287681-162631";
+const bannerHref = "https://www.pjatr.com/t/8-11156-287681-145813";
+const bannerImage = "https://www.pjtra.com/b/4-551603-287681-145813";
 
 export function HomepageAffiliateBanner() {
   return (
@@ -14,13 +14,13 @@ export function HomepageAffiliateBanner() {
         <a
           href={bannerHref}
           rel="sponsored nofollow"
-          className="mx-auto block w-full max-w-[800px] overflow-hidden rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-900 focus-visible:ring-offset-4"
+          className="mx-auto block w-full max-w-[728px] overflow-hidden rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-900 focus-visible:ring-offset-4"
           aria-label="Explore Scentbird fragrance subscription options"
         >
           <img
             src={bannerImage}
-            width="800"
-            height="200"
+            width="728"
+            height="90"
             alt="Scentbird fragrance subscription offer"
             loading="lazy"
             decoding="async"
