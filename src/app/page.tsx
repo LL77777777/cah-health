@@ -63,6 +63,32 @@ export default function Home() {
         </div>
       </section>
 
+      <section
+        aria-label="The CPAP Shop sponsored offer"
+        className="border-t border-gray-100 bg-white px-6 py-8"
+      >
+        <p className="mb-3 text-center text-xs text-gray-500">
+          Sponsored affiliate link
+        </p>
+        <a
+          href="https://www.pntrac.com/t/4-478682-287681-122517"
+          rel="sponsored nofollow"
+          aria-label="Visit The CPAP Shop"
+          className="mx-auto block w-[120px] max-w-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gray-900"
+        >
+          <img
+            src="https://www.pntrac.com/b/4-478682-287681-122517"
+            width={120}
+            height={90}
+            title="The CPAP Shop Logo"
+            alt="The CPAP Shop logo"
+            loading="lazy"
+            decoding="async"
+            className="block h-auto w-full"
+          />
+        </a>
+      </section>
+
       <section className="border-t border-gray-100 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 py-24">
           <h2 className="text-4xl font-serif mb-12 text-center">More Guides</h2>
