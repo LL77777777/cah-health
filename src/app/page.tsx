@@ -74,14 +74,14 @@ export default function Home() {
           href="https://www.pntrac.com/t/4-478682-287681-122517"
           rel="sponsored nofollow"
           aria-label="Visit The CPAP Shop"
-          className="mx-auto block w-[120px] max-w-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gray-900"
+          className="mx-auto block w-[300px] max-w-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gray-900"
         >
           <img
-            src="https://www.pntrac.com/b/4-478682-287681-122517"
-            width={120}
-            height={90}
-            title="The CPAP Shop Logo"
-            alt="The CPAP Shop logo"
+            src="https://www.pntrac.com/b/4-552457-287681-122517"
+            width={300}
+            height={250}
+            title="Best-Selling CPAP Machines"
+            alt="Best-Selling CPAP Machines"
             loading="lazy"
             decoding="async"
             className="block h-auto w-full"
