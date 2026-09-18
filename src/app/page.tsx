@@ -64,29 +64,27 @@ export default function Home() {
       </section>
 
       <section
-        aria-label="The CPAP Shop sponsored offer"
+        aria-label="COLOUR SHIELD - BODY sponsored offer"
         className="border-t border-gray-100 bg-white px-6 py-8"
       >
         <p className="mb-3 text-center text-xs text-gray-500">
           Sponsored affiliate link
         </p>
         <a
-          href="https://www.pntrac.com/t/4-478682-287681-122517"
+          href="https://www.gopjn.com/t/2-576465-287681-291642"
           rel="sponsored nofollow"
-          aria-label="Visit The CPAP Shop"
-          className="mx-auto block w-[300px] max-w-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gray-900"
+          className="mx-auto block w-fit max-w-full rounded-sm bg-gray-900 px-6 py-4 text-center text-sm font-semibold tracking-wide text-white transition-colors hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gray-900"
         >
-          <img
-            src="https://www.pntrac.com/b/4-552457-287681-122517"
-            width={300}
-            height={250}
-            title="Best-Selling CPAP Machines"
-            alt="Best-Selling CPAP Machines"
-            loading="lazy"
-            decoding="async"
-            className="block h-auto w-full"
-          />
+          COLOUR SHIELD - BODY
         </a>
+        <img
+          src="https://www.gopjn.com/i/2-576465-287681-291642"
+          width={1}
+          height={1}
+          alt=""
+          aria-hidden="true"
+          className="block h-px w-px border-0"
+        />
       </section>
 
       <section className="border-t border-gray-100 bg-gray-50">
