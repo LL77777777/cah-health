@@ -13,7 +13,7 @@ export const categoryDetails = {
   },
   lifestyle: {
     name: "Lifestyle",
-    lastModified: "2026-08-15",
+    lastModified: "2026-10-17",
     description:
       "Evidence-aware ideas for better sleep, daily balance, and a more intentional approach to wellbeing.",
   },
@@ -36,6 +36,20 @@ export type Article = {
 };
 
 export const articles: Article[] = [
+  {
+    slug: "warmies-heatable-stuffed-animals",
+    lastModified: "2026-10-17",
+    title: "Warmies: Small Comforts for Fall and Winter",
+    seoTitle: "Warmies Heatable Stuffed Animals for Cozy Fall Nights",
+    headline: "The First Cold Night: Warmies Heatable Stuffed Animals for Fall and Winter",
+    excerpt:
+      "Meet Warmies heatable stuffed animals through a cozy fall-to-winter story, with new plush picks, thoughtful gift ideas, and practical heating tips.",
+    category: "lifestyle",
+    image: "/warmies/cover.jpg",
+    imageAlt: "Warmies logo in purple on a white background",
+    featured: true,
+    relatedSlugs: ["sleep-optimization"],
+  },
   {
     slug: "raen-sunglasses-buying-guide",
     lastModified: "2026-08-30",
