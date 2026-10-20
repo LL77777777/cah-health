@@ -13,7 +13,7 @@ export const categoryDetails = {
   },
   lifestyle: {
     name: "Lifestyle",
-    lastModified: "2026-10-17",
+    lastModified: "2026-10-20",
     description:
       "Evidence-aware ideas for better sleep, daily balance, and a more intentional approach to wellbeing.",
   },
@@ -36,6 +36,20 @@ export type Article = {
 };
 
 export const articles: Article[] = [
+  {
+    slug: "acorn-slippers-autumn-comfort",
+    lastModified: "2026-10-20",
+    title: "Acorn Slippers: Autumn Comfort Event",
+    seoTitle: "Acorn Slippers: Autumn Comfort Event & 30% Off Select Styles",
+    headline: "Acorn Slippers Autumn Comfort Event: 30% Off Select Styles",
+    excerpt:
+      "Explore Acorn slippers for women and men, plus slipper socks. Compare cozy styles and check 30% off select slippers with COZYPAIR and bundle offers.",
+    category: "lifestyle",
+    image: "/acorn/autumn-slipper-socks.jpg",
+    imageAlt: "Two people relaxing in a tent wearing gray Acorn slipper socks with brown suede trim",
+    featured: true,
+    relatedSlugs: ["warmies-heatable-stuffed-animals", "sleep-optimization"],
+  },
   {
     slug: "warmies-heatable-stuffed-animals",
     lastModified: "2026-10-17",
