@@ -1,7 +1,7 @@
 export const categoryDetails = {
   nutrition: {
     name: "Nutrition",
-    lastModified: "2026-08-04",
+    lastModified: "2026-10-29",
     description:
       "Practical guidance for eating with intention, supporting metabolic health, and building sustainable habits.",
   },
@@ -13,7 +13,7 @@ export const categoryDetails = {
   },
   lifestyle: {
     name: "Lifestyle",
-    lastModified: "2026-10-20",
+    lastModified: "2026-10-29",
     description:
       "Evidence-aware ideas for better sleep, daily balance, and a more intentional approach to wellbeing.",
   },
@@ -52,7 +52,7 @@ export const articles: Article[] = [
   },
   {
     slug: "warmies-heatable-stuffed-animals",
-    lastModified: "2026-10-17",
+    lastModified: "2026-10-29",
     title: "Warmies: Small Comforts for Fall and Winter",
     seoTitle: "Warmies Heatable Stuffed Animals for Cozy Fall Nights",
     headline: "The First Cold Night: Warmies Heatable Stuffed Animals for Fall and Winter",
@@ -62,7 +62,7 @@ export const articles: Article[] = [
     image: "/warmies/cover.jpg",
     imageAlt: "Warmies logo in purple on a white background",
     featured: true,
-    relatedSlugs: ["sleep-optimization"],
+    relatedSlugs: ["acorn-slippers-autumn-comfort", "sleep-optimization"],
   },
   {
     slug: "raen-sunglasses-buying-guide",
@@ -112,10 +112,10 @@ export const articles: Article[] = [
   },
   {
     slug: "gut-health",
-    lastModified: "2026-08-30",
-    title: "A 7-Day Gut-Friendly Reset",
-    seoTitle: "7-Day Gut-Friendly Reset: A Food-First Foundation",
-    headline: "A 7-Day Gut-Friendly Reset",
+    lastModified: "2026-10-29",
+    title: "Gut-Friendly Eating Habits",
+    seoTitle: "Gut-Friendly Eating: Practical Food-First Habits",
+    headline: "Gut-Friendly Eating: A Practical Food-First Foundation",
     excerpt: "A measured, food-first foundation for supporting everyday digestive health.",
     category: "nutrition",
     image: "/page1.jpg",
@@ -125,7 +125,7 @@ export const articles: Article[] = [
   },
   {
     slug: "sleep-optimization",
-    lastModified: "2026-08-30",
+    lastModified: "2026-10-29",
     title: "Beyond Melatonin",
     seoTitle: "Beyond Melatonin: Practical Habits for Better Sleep",
     headline: "Beyond Melatonin: Practical Foundations for Better Sleep",
@@ -135,7 +135,12 @@ export const articles: Article[] = [
       "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=800",
     imageAlt: "A calm bedroom prepared for sleep",
     featured: true,
-    relatedSlugs: ["intermittent-fasting", "gut-health"],
+    relatedSlugs: [
+      "warmies-heatable-stuffed-animals",
+      "acorn-slippers-autumn-comfort",
+      "intermittent-fasting",
+      "gut-health",
+    ],
   },
   {
     slug: "running-shoes-vs-pickleball-shoes",

@@ -1,5 +1,6 @@
 import { ArticleByline } from "@/components/article-byline";
 import { ArticleJsonLd } from "@/components/article-json-ld";
+import { RelatedArticles } from "@/components/related-articles";
 import { getArticleBySlug } from "@/data/articles";
 import { createArticleMetadata } from "@/lib/seo";
 import styles from "./warmies.module.css";
@@ -129,6 +130,7 @@ export default function WarmiesHeatableStuffedAnimalsPage() {
         <p className={styles.note}>All Warmies links and linked images use our affiliate link and may open a general landing page. Once there, search for the named product or collection, or find the care and returns information in the site's help section. Prices, availability, offers, and policies may change.</p>
       </section>
       <footer>Independent editorial content from CAH Health. Product photographs come from official Warmies product pages; the cover is the provided affiliate creative.</footer>
+      <RelatedArticles article={article} />
     </article>
 
     </main>

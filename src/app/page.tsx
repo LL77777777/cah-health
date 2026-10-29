@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const latestArticle = articles[0];
   const featuredArticles = articles.filter((article) => article.featured);
   const moreGuides = articles.filter((article) => !article.featured);
 
@@ -33,7 +34,7 @@ export default function Home() {
             Independent, evidence-aware guidance for movement, everyday wellness,
             and intentional living.
           </p>
-          <Link href="/posts/art-of-movement" className="inline-block bg-white text-black px-8 py-4 font-bold uppercase tracking-widest text-sm hover:bg-gray-200 transition-all">
+          <Link href={`/posts/${latestArticle.slug}`} className="inline-block bg-white text-black px-8 py-4 font-bold uppercase tracking-widest text-sm hover:bg-gray-200 transition-all">
             Read Our Latest
           </Link>
         </div>
